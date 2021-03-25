@@ -26,6 +26,10 @@ case "${CROSS_TRIPLE}" in
 	CROSS_TRIPLE="x86_64-w64-mingw32" ;;
     i686-w64-mingw32|win32)
 	CROSS_TRIPLE="i686-w64-mingw32" ;;
+    arm-linux-androideabi|android|android32)
+    CROSS_TRIPLE="arm-linux-androideabi" ;;
+    aarch64-linux-android|android64)   
+    CROSS_TRIPLE="aarch64-linux-android" ;; 
     i386-linux-gnu|i386)
 	echo "i386-linux-gnu not yet implemented." && exit 1 ;;
     *)

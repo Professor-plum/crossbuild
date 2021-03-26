@@ -1,0 +1,11 @@
+--- cstddef	2018-08-31 16:46:40.000000000 +0000
++++ cstddef_patched	2020-07-07 14:44:06.634709000 +0000
+@@ -41,7 +41,7 @@
+ #endif
+ 
+ // Don't include our own <stddef.h>; we don't want to declare ::nullptr_t.
+-#include_next <stddef.h>
++#include <stddef.h>
+ #include <__nullptr>
+ 
+ _LIBCPP_BEGIN_NAMESPACE_STD
